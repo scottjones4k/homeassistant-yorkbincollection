@@ -1,0 +1,12 @@
+{
+    "domain": "yorkbincollection",
+    "name": "York Bin Collection Custom Component",
+    "codeowners": [],
+    "config_flow": true,
+    "dependencies": ["application_credentials"],
+    "documentation": "https://github.com/scottjones4k/homeassistant-yorkbincollection",
+    "iot_class": "cloud_polling",
+    "loggers": ["yorkbincollection"],
+    "requirements": ["aiohttp>=3.9.4", "pydantic"],
+    "version": "1.0.0"
+  }
