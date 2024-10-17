@@ -38,7 +38,7 @@ class YBCBaseEntity(CoordinatorEntity):
             identifiers={(DOMAIN, str(self.idx))},
             manufacturer="York Waste",
             model=device_model,
-            name=self.data.name,
+            name=self.data.service,
         )
 
     @property
