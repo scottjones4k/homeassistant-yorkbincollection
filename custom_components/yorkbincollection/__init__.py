@@ -11,6 +11,7 @@ from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 from .const import DOMAIN, API_ENDPOINT
 from .ybc_update_coordinator import YBCUpdateCoordinator
+from .api.client import YBCClient
 
 PLATFORMS: list[Platform] = [Platform.SENSOR]
 
