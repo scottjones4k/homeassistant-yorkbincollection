@@ -8,7 +8,7 @@ from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime
 
-from homeassistant.components.sensor import BinarySensorEntity, SensorStateClass, SensorDeviceClass, SensorEntityDescription
+from homeassistant.components.binary_sensor import BinarySensorEntity, BinarySensorEntityDescription
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import ATTR_ATTRIBUTION
 from homeassistant.core import HomeAssistant
@@ -31,7 +31,7 @@ _LOGGER = logging.getLogger(__name__)
 
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
 @dataclass(frozen=True, kw_only=True)
-class YBCBinarySensorEntityDescription(SensorEntityDescription):
+class YBCBinarySensorEntityDescription(BinarySensorEntityDescription):
     """Describes YBC sensor entity."""
 
     value_fn: Callable[[dict[str, Any]], StateType]

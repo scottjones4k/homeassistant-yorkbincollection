@@ -1,6 +1,6 @@
 {
     "domain": "yorkbincollection",
-    "name": "York Bin Collection Custom Component",
+    "name": "York Bin Collection",
     "codeowners": [],
     "config_flow": true,
     "dependencies": ["application_credentials"],
