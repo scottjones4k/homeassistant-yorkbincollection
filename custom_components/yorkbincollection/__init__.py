@@ -13,7 +13,7 @@ from .const import DOMAIN, API_ENDPOINT
 from .ybc_update_coordinator import YBCUpdateCoordinator
 from .api.client import YBCClient
 
-PLATFORMS: list[Platform] = [Platform.SENSOR]
+PLATFORMS: list[Platform] = [Platform.SENSOR,Platform.BINARY_SENSOR]
 
 _LOGGER = logging.getLogger(__name__)
 

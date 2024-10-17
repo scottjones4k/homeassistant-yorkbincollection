@@ -23,6 +23,9 @@
       },
       "last_collected": {
         "name": "Last Collected"
+      },
+      "collection_due_today": {
+        "name": "Collection Due Today"
       }
     }
   }
