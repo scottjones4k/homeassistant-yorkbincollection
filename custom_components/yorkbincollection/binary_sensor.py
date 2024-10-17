@@ -56,7 +56,7 @@ async def async_setup_entry(
     await coordinator.async_config_entry_first_refresh()
 
     sensors = [
-        YBCSensor(
+        YBCBinarySensor(
             coordinator,
             entity_description,
             index,
@@ -68,7 +68,7 @@ async def async_setup_entry(
 
     async_add_entities(sensors) 
 
-class YBCSensor(YBCBaseEntity, BinarySensorEntity):
+class YBCBinarySensor(YBCBaseEntity, BinarySensorEntity):
     """Representation of a YBC sensor."""
 
     def __init__(

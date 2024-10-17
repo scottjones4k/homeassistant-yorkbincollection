@@ -23,7 +23,9 @@
       },
       "last_collected": {
         "name": "Last Collected"
-      },
+      }
+    },
+    "binary_sensor": {
       "collection_due_today": {
         "name": "Collection Due Today"
       }

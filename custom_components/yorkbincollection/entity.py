@@ -37,7 +37,7 @@ class YBCBaseEntity(CoordinatorEntity):
             entry_type=DeviceEntryType.SERVICE,
             identifiers={(DOMAIN, str(self.idx))},
             manufacturer="York Waste",
-            model=device_model,
+            model=device_model.capitalize(),
             name=self.data.service.capitalize(),
         )
 

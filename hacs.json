@@ -2,6 +2,7 @@
     "name": "York Bin Collection",
     "render_readme": true,
     "domains": [
-      "sensor"
+      "sensor",
+      "binary_sensor"
     ]
   }
